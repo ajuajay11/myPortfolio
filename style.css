@@ -1,20 +1,30 @@
 
-
-
 body{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   background:#000;
+  scroll-behavior: smooth;
+}
+
+.animated-element {
+  transition: all 3s ease-in-out;
+  transform: translateY(0);
+}
+
+.animated-element.is-animated {
+  transform: translateY(-230px);
 }
 
 /* header */
+
 
 .navigation{
   width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 999;
+  position: relative;
 }
 .logo{
   text-align: center;
@@ -44,8 +54,8 @@ body{
   color:#fff;
 }
 .menu ul li a:hover{
-  color: #640a16f5;
-  transition: 3s;
+  color: #991729f5;
+  transition: 0.5s;
 }
 
 /* header */
@@ -65,6 +75,14 @@ height: 700px;
   align-items: center;
   
   }
+  .hero .divider-line{
+    margin-left: 15px;
+    width: 100px;
+    top: 92px;
+    height:4px;
+    position: relative;
+    background-color: #eb042373;
+}
   .hero-row .col1 h1{
     padding-top: 60px;
     font-size: 100px;
@@ -144,7 +162,12 @@ height: 700px;
   background: rgba(248, 3, 23, 0.24);
   color: antiquewhite;
   padding: 20px 40px;
+  animation: fadeIn 2s;
 }
+.fade-in {
+  animation-play-state: running;
+}
+
 .section-two h1{
   
   font-size: 30px;
@@ -168,58 +191,31 @@ height: 700px;
   padding: 20px 0px;
 }
 /* section two */
-
-/* section-three */
-.section-three{
+.skill{
   min-height: 100vh;
-  padding: 0px 40px;
-  
-}
-.section-three h1{
-  padding-top: 50PX;
-  color: white;
-  text-shadow: 2px 2px red;
-  text-align: center;
 }
 
-.circular-progress{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background: conic-gradient(#00498f 315deg, rgb(148, 77, 77) 0deg);
-  animation: progress 7s infinite;
 
+.skill-bar {
+  width: 200px; /* Width and height should be equal to create a circle */
+  height: 200px;
+  border-radius: 50%; /* Make the div round */
+  background-color: #ddd; /* Background color */
+  position: relative; /* Position relative for the .percentage element */
 }
-@keyframes progress {
-  0%{
-    background: conic-gradient(#00498f 0deg, rgb(148, 77, 77) 0deg);
-  }
-  5%{
-    background: conic-gradient(#00498f 110deg, rgb(148, 77, 77) 0deg);
-  }
-  20%{
-    background: conic-gradient(#00498f 200deg, rgb(148, 77, 77) 0deg);
-  }
-  30%{
-    background: conic-gradient(#00498f 250deg, rgb(148, 77, 77) 0deg);
-  }
-  40%{
-    background: conic-gradient(#00498f 300deg, rgb(148, 77, 77) 0deg);
-  }
-  100%{
-    background: conic-gradient(#00498f 315deg, rgb(148, 77, 77) 0deg);
-  }
-  
+
+.percentage {
+  width: 100%; /* Width and height should be equal to the parent .skill-bar */
+  height: 100%;
+  border-radius: 50%; /* Make the span round */
+  background-color: #4CAF50; /* Color of the filled portion */
+  position: absolute; /* Position absolute to clip the .percentage element */
+  clip: rect(0, 200px, 200px, 100px); /* Initial clip state */
+  animation: fill-bar 1s ease-out forwards; /* Animation name, duration, easing and fill mode */
 }
-.circular-progress::before{
-  content: " ";
-  z-index: 999;
-  position: absolute;
-  width: 210px;
-  height: 210px;
-  background-color: #868f00;
-  border-radius: 50%;
+
+@keyframes fill-bar {
+  0% {clip: rect(0, 200px, 200px, 100px);} /* initial clip state */
+  100% {clip: rect(0, 100px, 200px, 0);} /* final clip state */
 }
+

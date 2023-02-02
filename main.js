@@ -1,26 +1,13 @@
-const texts = [" WEB DEVELOPER"];
-let count = 0;
-let index = 0;
-let currentText = "";
+var percentage = document.querySelector('.percentage');
+
+// Add the class "fill" to the .percentage element to start the animation
+percentage.classList.add('fill');
 
 
+var sectionTwo = document.querySelector(".section-two");
 
-(function type() {
-
-    if(count === texts.length){
-        count = 0;
-
-    }
-    currentText = texts[count];
-    letter = currentText.slice(0, ++index);
-
-
-    document.querySelector(".typing").textContent = letter;
-    if (letter.length === currentText.length){
-    //     count++;
-    //     index = 1;
-    
-}
-setTimeout(type, 300);
-
-})();
+sectionTwo.addEventListener("scroll", ()=>{
+  if (sectionTwo.scrollTop > 0) {
+    sectionTwo.classList.add(".fade-in");
+  }
+});
