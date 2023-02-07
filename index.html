@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,500;0,600;0,800;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f541879a4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resp.css">
     <title>AJAY</title>
 </head>
 <body>
     <!-- header -->
     <header>
-        <div class="navigation">
+        <div class="navigation" id="hero">
             <div class="logo">
-                <h1>AJU</h1>
+                <h1><a href="index.html"><img src="./image/Ajay signature (2).png" alt="logo"></a></h1>
             </div>
             <div class="menu">
-                <ul>
+                <ul class="menu-bar">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Myportfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    
+                    <li><a href="#My-projects">Myportfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <div id="hamburger" class="icon-ham" style="color:#fff" class="icon"><i class="fas fa-hamburger"></i></div>
+                    <ul id="ham-nav" class="ham-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#My-projects">Myportfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -30,7 +47,14 @@
     <div class="hero">
         <div class="hero-row">
             <div class="col1">
-                <h1><div class="divider-line"></div>HELLO IAM</h1><SPAN><h1>AJAY</h1></SPAN>
+                <h1><div class="divider-line"></div>HELLO IAM</h1><SPAN><h1 class="my-name">AJAY</h1></SPAN>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                </div>
             </div>
             <div class="col2">
                 <img src="./image/photoshop1_adobesparkvhidelcued.png" alt="">
@@ -40,28 +64,156 @@
     <!-- hero section -->
 
     <!-- section two-->
-    <div class="section-two">
+    <div class="section-two" id="about">
         <h1>A LITTLE ABOUT ME</h1>
        <div class="divider"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, cupiditate.
-            Neque, quaerat quisquam consequuntur totam provident deserunt cum officiis incidunt?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, cupiditate.
-            Neque, quaerat quisquam consequuntur totam provident deserunt cum officiis incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, cupiditate.
-            Neque, quaerat quisquam consequuntur totam provident deserunt cum officiis incidunt?</p>
+        <p>Highly motivated and detail-oriented Web Developer with 1.6 years of experience creating visually
+             appealing and user-friendly websites using WordPress, HTML5, CSS, JavaScript,
+            Bootstrap 5, and PHP. Skilled in SEO, with a focus on delivering high-quality and effective solutions
+            for clients. Adept at collaborating with design and development teams to bring projects from
+            concept to completion. Currently learning ReactJS to expand skillset.
+        </p>
+        
+        <a class="cv-btn" href="image/Ajaykrishnan Resume.pdf" download="">Download CV</a>
     </div>
 
     <!-- section two-->
 
     <!-- section three-->
    
-<div class="skill">
+<div class="skill" id="skills">
+    <h1>SKILLS</h1>
+    
+        <div style="background-color: #fff;" class="divider"></div>
+   
     <div class="skill-bar">
-        <span class="percentage"></span>
-      </div>
+        <div class="html">
+            <h2>HTML</h2>
+        </div>
+        <div class="html">
+            <h2>CSS</h2>
+        </div>
+        <div class="html">
+            <h2>Javascript</h2>
+        </div>
+        <div class="html">
+            <h2>Wordpress</h2>
+        </div>
+    </div><div class="skill-bar">
+        
+        <div class="html">
+            <h2>Bootstrap</h2>
+        </div>
+        <div class="html">
+            <h2>Php  </h2>
+        </div>
+        <div class="html">
+            <h2>My SQL</h2>
+        </div>
+        <div class="html">
+            <h2>React JS</h2>
+        </div>
+    </div>
       
 </div>
+
+ <div class="My-projects" id="My-projects">
+    <h1 class="pro-title">PORTFOLIO</h1>
+    <div style="background-color: #000000;" class="divider"></div>
+       
+    <div class="project-index">
+        <div class="projects">
+            <img src="./image/lottiebee.png" alt="projects">
+            <div class="link"> 
+                <h1 class="proj-name">Lottiebee</h1>
+                <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="projects">
+            <img src="./image/Varal uae.png" alt="projects">
+            <div class="link">
+                <h1 class="proj-name">Lottiebee</h1>
+                <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="projects">
+            <img src="./image/Folio.png" alt="projects">
+            <div class="link"> 
+                <h1 class="proj-name">Lottiebee</h1>
+                <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="projects-page">
+        <a href="projects.html">Show More</a>
+    </div>
+ </div>
       
     <!-- section three-->
+
+    <!-- .contact section -->
+<div class="contact-sec" id="contact">
+    <h1 class="conct-title">GET IN TOUCH</h1>
+    <div style="background-color: #ffffff;" class="divider"></div>
+    <div class="conct-row">
+        <div class="conct-col-1">
+        <div class="details">
+            <div class="details-col">
+               <a href="#"><i class="fa-solid fa-location-dot"></i> &nbsp; No.4B Jayanagar Chennai 600100</a>
+            </div>
+            <div class="details-col">
+                <a href="#"><i class="fa-solid fa-phone"></i> &nbsp;+91 9884259035</a>
+             </div>
+             <div class="details-col">
+                <a href="#"><i class="fa-solid fa-envelope"></i> &nbsp;ajaykrish212121@gmail.com</a>
+             </div>
+             <div class="details-col">
+                <a href="#"><i class="fa-brands fa-github"></i></i> &nbsp;Git Hub Link</a>
+             </div>
+
+        </div>
+        </div>
+        <div class="conct-col-1" id="contact">
+            <form action="/" class="form-val">
+                
+                <div class="form-name">
+                    <input type="text" class="input" placeholder="Name" id="name">
+                    <input type="tel" class="input" placeholder="Phone" id="number">
+                </div>
+                <br>
+                 
+                <input type="email" placeholder="Email" id="email"><br>
+                
+                <input type="text" placeholder="Message" class="message" id="message"><br>
+    
+                <button class="sbt-btn" id="sbt-btn" onclick="myFunction">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    
+</div>
+
+<!-- Arrow up and down -->
+
+<div class="arrow" id="myBtn">
+    <a href="#hero"><i style="color:#fff" class="fa-solid fa-arrow-up arrow-icon"></i></a>
+</div>
+
+<!-- Arrow up and down -->
+
+
+    <!-- contact section end-->
+
+
+    <footer>
+        <div class="copyright">
+           <div> Copyright © 2023 Ajay. All Rights Reserved.</div>
+           <div> Terms & Policy Disclaimer</div>
+        </div>
+    </footer>
 
 <script src="./main.js"></script>
 </body>

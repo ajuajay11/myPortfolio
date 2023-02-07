@@ -1,13 +1,25 @@
-var percentage = document.querySelector('.percentage');
+var bottomTop = document.getElementById('myBtn');
 
-// Add the class "fill" to the .percentage element to start the animation
-percentage.classList.add('fill');
+window.onscroll= ()=> {
+    if (document.documentElement.scrollTop > 500) {
+        bottomTop.style.display = "block";
+      } else {
+        bottomTop.style.display = "none";
+      }
+    
+}
 
 
-var sectionTwo = document.querySelector(".section-two");
 
-sectionTwo.addEventListener("scroll", ()=>{
-  if (sectionTwo.scrollTop > 0) {
-    sectionTwo.classList.add(".fade-in");
+var hamBurger = document.getElementById('hamburger');
+var show = document.getElementById("ham-nav");
+
+
+hamBurger.addEventListener("click", () =>{
+  if (show.style.display=="none") {
+    show.style.display="block";
   }
-});
+  else{
+    show.style.display="none"
+  }
+})
