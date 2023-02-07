@@ -126,6 +126,10 @@
     .form-name .input{
       width: 38%;
     }
+    .form-val .sbt-btn {
+      width: 100%;
+      font-size: 20px;
+  }
 
     footer {
       font-size: 12px;
