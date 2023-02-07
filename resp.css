@@ -53,7 +53,7 @@
 
   .hero-row{
     flex-direction: column;
-    height: 750px;
+    height: 755px;
   }
   .hero-row .col1 h1{
     font-size: 60px;
