@@ -60,7 +60,7 @@ body{
   transition: 0.5s;
   font-weight: bold;
 }
-
+.hamburger{display: none;}
 /* header */
 
 /* <!-- hero section --> */
