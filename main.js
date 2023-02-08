@@ -1,14 +1,88 @@
+
+const projects =[{
+  image:'./image/puratap.png',
+  name:"Puratap",
+  link: "https://www.puratap.com.au/"
+},{
+  image:'./image/lottiebee.png',
+  name:"Lottiebee",
+  link: "https://ajuajay11.github.io/lottiebee/"
+},{
+image:'./image/Varaluae.png',
+  name:"Varal uae",
+  link: "https://ajuajay11.github.io/project-one/"
+},{
+  image:'./image/auto.png',
+  name:"Infinity Automobiles",
+  link: "https://infinityautomobiles.com/"
+},{
+  image:'./image/jsconstructions.png',
+  name:"JS Constructions",
+  link: "https://jsconstructionss.com/"
+},{
+  image:'./image/selling..png',
+  name:"Selling.",
+  link: "https://ajuajay11.github.io/project-two/"
+},{
+  image:'./image/Folio.png',
+  name:"Infinity Automobiles",
+  link: "https://ajuajay11.github.io/project-three/"
+},{
+  image:'./image/nugenica.png',
+  name:"Nugenica",
+  link: "https://nugenica.in/"
+},{
+  image:'./image/physiocare.png',
+  name:"Sivam Physiocare",
+  link: "https://sivamphysiocare.com/"
+},
+{
+    image:'./image/portfolio.png',
+    name:"Personal Portfolio",
+    link: "https://ajuajay11.github.io/myPortfolio/index.html"
+},{
+    image:'./image/kelly.png',
+    name:"Kelly",
+    link: "https://ajuajay11.github.io/project-four/"
+},{
+  image:'./image/riyadvi.png',
+  name:"Riyadvi",
+  link: "https://riyadvisoftwaretechnologies.com/"
+},{
+  image:'./image/sterling.png',
+  name:"Sterlingvalves & Controls",
+  link: "https://sterlingvalvesandcontrols.in/"
+}];
+
+let value ="";
+
+projectName=document.getElementById("projects-portfolio");
+
+projects.map((e)=>{
+
+  value = value +`
+  <div class="projects">
+       <img src=${e.image}>
+      <div class="link"> 
+          <h1 class="proj-name">${e.name}</h1>
+          <a href="${e.link}" target="blank"><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+      </div>
+  </div>`;
+  projectName.innerHTML= value;
+});
+
+
+
+
 var bottomTop = document.getElementById('myBtn');
 
-window.onscroll= ()=> {
+window.onscroll = ()=> {
     if (document.documentElement.scrollTop > 500) {
         bottomTop.style.display = "block";
       } else {
         bottomTop.style.display = "none";
-      }
-    
+    }
 }
-
 
 
 var hamBurger = document.getElementById('hamburger');
@@ -22,4 +96,37 @@ hamBurger.addEventListener("click", () =>{
   else{
     show.style.display="none"
   }
-})
+});
+
+
+
+
+
+
+
+
+// <!-- <div class="project-index">
+//             <div class="projects">
+//                 <img src="./image/lottiebee.png" alt="projects">
+//                 <div class="link"> 
+//                     <h1 class="proj-name">Varal uae</h1>
+//                     <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+//                 </div>
+//             </div>
+//             <div class="projects">
+//                 <img src="./image/Varal uae.png" alt="projects">
+//                 <div class="link">
+//                     <h1 class="proj-name">Lottiebee</h1>
+//                     <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+//                 </div>
+//             </div>
+//             <div class="projects">
+//                 <img src="./image/Folio.png" alt="projects">
+//                 <div class="link"> 
+//                     <h1 class="proj-name">Folio</h1>
+//                     <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+//                 </div>
+//             </div>
+            
+    
+//         </div> -->

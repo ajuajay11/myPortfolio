@@ -6,31 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="resp.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,500;0,600;0,800;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f541879a4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f541879a4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resp.css">
     <title>AJAY</title>
 </head>
-<body>
+<body style="background-color: #000000;">
     <!-- header -->
-    <header>
-        <div class="navigation">
+    <header >
+        <div class="navigation" id="hero">
             <div class="logo">
                 <h1><a href="index.html"><img src="./image/Ajay signature (2).png" alt="logo"></a></h1>
             </div>
             <div class="menu">
-                <ul>
+                <ul class="menu-bar">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="./index.html">Skills</a></li>
-
-                    <li><a href="index.html">Myportfolio</a></li>
-                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#My-projects">Myportfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
+
+                <div class="hamburger">
+                    <div id="hamburger" class="icon-ham" style="color:#fff" class="icon"><i class="fas fa-hamburger"></i></div>
+                    <ul id="ham-nav" class="ham-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#My-projects">Myportfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <!-- header -->
+
+
+    <!-- portfolio -->
+
+
+    <div class="My-projects" id="My-projects">
+        <h1 class="pro-title">PORTFOLIO</h1>
+        <div style="background-color: #000000;" class="divider"></div>
+           
+        <div class="project-index" id="projects-portfolio">
+            <!-- <div class="projects">
+                <img src="./image/lottiebee.png" alt="projects">
+                <div class="link"> 
+                    <h1 class="proj-name">Varal uae</h1>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./image/Varal uae.png" alt="projects">
+                <div class="link">
+                    <h1 class="proj-name">Lottiebee</h1>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./image/Folio.png" alt="projects">
+                <div class="link"> 
+                    <h1 class="proj-name">Folio</h1>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div> -->
+            
+    
+        </div>
+     </div>
+    <!-- portfolio -->
+        <!-- .contact section -->
+<div class="contact-sec" id="contact">
+    <h1 class="conct-title">GET IN TOUCH</h1>
+    <div style="background-color: #ffffff;" class="divider"></div>
+    <div class="conct-row">
+        <div class="conct-col-1">
+        <div class="details">
+            <div class="details-col">
+               <a href="#"><i class="fa-solid fa-location-dot"></i> &nbsp; No.4B Jayanagar Chennai 600100</a>
+            </div>
+            <div class="details-col">
+                <a href="#"><i class="fa-solid fa-phone"></i> &nbsp;+91 9884259035</a>
+             </div>
+             <div class="details-col">
+                <a href="#"><i class="fa-solid fa-envelope"></i> &nbsp;ajaykrish212121@gmail.com</a>
+             </div>
+             <div class="details-col">
+                <a href="#"><i class="fa-brands fa-github"></i></i> &nbsp;Git Hub Link</a>
+             </div>
+
+        </div>
+        </div>
+        <div class="conct-col-1" id="contact">
+            <form action="/" class="form-val">
+                
+                <div class="form-name">
+                    <input type="text" class="input" placeholder="Name" id="name">
+                    <input type="tel" class="input" placeholder="Phone" id="number">
+                </div>
+                <br>
+                 
+                <input type="email" placeholder="Email" id="email"><br>
+                
+                <input type="text" placeholder="Message" class="message" id="message"><br>
+    
+                <button class="sbt-btn" id="sbt-btn" onclick="myFunction">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    
+</div>
+
+    <footer>
+        <div class="copyright">
+           <div> Copyright © 2023 Ajay. All Rights Reserved.</div>
+           <div> Terms & Policy Disclaimer</div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
