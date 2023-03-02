@@ -160,5 +160,118 @@ function showSlides(n) {
     
     </div>
    
+   <h1>JSON</h1>
+   <div>
+    //JSON --- Javscritp object notation   DATA TRANSFER FORMAT AANU JSON -- language independed to all language
+
+// wb app ok client server architecture aanu  -- data is passing 
+
+
+// data types like(sting, array Boolean, object, null, undefined) serverlot ayakan ulla oru datatransfer format anu JSON
+
+// from object to string cchange chyanel oru way ind 
+
+
+// object to array
+var objName ={
+    name:"ajay",
+    place:"mannue",
+    address:"ajjsknner",
+}
+
+var objString= JSON.stringify(objName);
+console.log(objString); 
+
+
+//array to object
+
+var d= ["name", "place"];
+
+var stringArr = JSON.parse(d);
+console.log(stringArr); 
+
+   </div>
+
+   <h1>VAR LET AND CONST</h1>
+
+   <div>// basically var let const are behave like same but there is some differnece b/w them
+
+    // var - var declare chyan ullad aan , javascript begining , pakaram vannad aan let
+    
+    // every function have a stack memory to store the variable
+    
+    // eg: 
+    // var "location" global varibale aan so ed unnexpected behavaiout tharum but let location ittal alredy declared in the windows object enn error adikum
+    
+    var location ="none"
+    let locarion="none"
+    
+    // it is safe to use LET
+    
+    // UNDEFINED meaning :  we didnt assign a value inside the variable to it will be shows as undefined
+    
+    // HOISTING : declaration topil kond poi vekkum
+    
+    function test() {
+        var nameK;
+        console.log(nameK);
+        nameK="10;"
+    
+        console.log(nameK);
+    }test() ;
+    
+    // this is hoisting declaration topil kond poi vekkum UNDEFINED AANU KANIKAA
+    // js read like this
+    
+    
+    // and  the LET variable HOISTING WORK AAVILA
+    
+    // using hoising we can add No.of times but inthe case of let it will not work shows as error
+    
+    // we can declare one time only for LET
+    
+    
+    
+    
+    // var -> function scope aanu print avum
+    // let -> block scope anu  inside the {  inside this }
+    
+    // block scope example step1
+    function name() {
+        let a =20;
+        if (true) {
+            let a =40;/// epol evde ee line ellegi mele ulla 20 print chyum
+            console.log(a)  // block scope
+        }
+        console.log(a)
+    }
+    name();
+    
+    
+    // CONST letnte ella properties und 
+    // but const declare chyumbo oru value indavanam and it should be constant we can reasignt he value
+    // but we ca mutate inside the object or array eg 
+    
+    function test() {
+        const a =[];
+        a.push(33); // eghen mutate chyam
+        console.log(a);
+    }
+    test();</div>
+
+
+    <h1> array sorting</h1>
+    <div>
+      
+const numbers = [4, 3, 7, 1, 9, 2];
+
+// numbers.sort((a,b) => b-a);
+
+// console.log(numbers);
+
+var largest = Math.max(...numbers);
+var secondLargest = Math.max(...numbers.filter(num=>num!==largest));
+console.log(secondLargest);
+    </div>
 </body>
 </html>
