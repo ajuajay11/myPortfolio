@@ -71,5 +71,94 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }</span>
     </div>
+<div>  window.location.href = "second.html";</div>
+  
+<h1>closure</h1>
+<div> // eg?
+  // closure is a fun with in bundle within the lexical group? or fucntion along with the lexical scope
+  // a parent function and child function if we have a varibale decale in parent we can acces and call from child to parent is called closure
+  
+  //function along with this ls=exicsl scope bundle toghther of closure is ca cclosure
+  
+  function x() {
+      var a="ajay";
+      function y() {
+          console.log(a);
+      }
+      y()
+  }
+  x();
+  
+  //eg1
+  function x() {
+      var a=2;
+      function y() {
+          console.log(a);
+      }
+     return y;
+  }
+  var z = x();
+  console.log(z);
+  z();
+  
+  //eg2
+  
+  function f() {
+      var n =900;
+  
+  function g() {
+      var an =3;
+      function gg() {
+          console.log(n, an);
+      }
+      gg()
+  }g()
+  }
+  f();</div>
+
+
+  <h1>hoisting</h1>
+
+  <div>// in javascript , hoisting is the default behaviour of moving all the declaration at the top of the scope before code execution
+
+    // it is usually woked on function declaration not in experssion
+    
+    // function Off() {
+    //     console.log("this is funvtion declation");
+    // }
+    // Off();//in this declaration we can call it anywhere top bottom, if we call this actually what is happening is function Off() {
+    //     console.log("this is funvtion declation");
+    // } this is going to top it is defult
+    
+    
+    
+    //function experssion call it form variable
+    
+    // var funct= function() {
+    //     console.log("this is funvtion declation");//this will execute but if i call on top of the fucntion it will be undefined
+    // }
+    // funct();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //eg trying 
+    
+    // jkl()
+    // console.log(e);
+    
+    // var e=3;
+    // function jkl() {
+    //     console.log("kjnfewoj");
+    // }
+    
+    
+    </div>
+   
 </body>
 </html>
