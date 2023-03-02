@@ -1,4 +1,13 @@
 
+var bottomTop = document.getElementById('myBtn');
+
+window.onscroll = ()=> {
+    if (document.documentElement.scrollTop > 500) {
+        bottomTop.style.display = "block";
+      } else {
+        bottomTop.style.display = "none";
+    }
+}
 const projects =[{
   image:'./image/puratap.png',
   name:"Puratap",
@@ -54,7 +63,7 @@ image:'./image/Varaluae.png',
   link: "https://sterlingvalvesandcontrols.in/"
 }];
 
-let value ="";
+let value = "";
 
 projectName=document.getElementById("projects-portfolio");
 
@@ -68,21 +77,8 @@ projects.map((e)=>{
           <a href="${e.link}" target="blank"><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
       </div>
   </div>`;
-  projectName.innerHTML= value;
+  projectName.innerHTML = value;
 });
-
-
-
-
-var bottomTop = document.getElementById('myBtn');
-
-window.onscroll = ()=> {
-    if (document.documentElement.scrollTop > 500) {
-        bottomTop.style.display = "block";
-      } else {
-        bottomTop.style.display = "none";
-    }
-}
 
 
 var hamBurger = document.getElementById('hamburger');
@@ -97,36 +93,3 @@ hamBurger.addEventListener("click", () =>{
     show.style.display="none"
   }
 });
-
-
-
-
-
-
-
-
-// <!-- <div class="project-index">
-//             <div class="projects">
-//                 <img src="./image/lottiebee.png" alt="projects">
-//                 <div class="link"> 
-//                     <h1 class="proj-name">Varal uae</h1>
-//                     <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
-//                 </div>
-//             </div>
-//             <div class="projects">
-//                 <img src="./image/Varal uae.png" alt="projects">
-//                 <div class="link">
-//                     <h1 class="proj-name">Lottiebee</h1>
-//                     <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
-//                 </div>
-//             </div>
-//             <div class="projects">
-//                 <img src="./image/Folio.png" alt="projects">
-//                 <div class="link"> 
-//                     <h1 class="proj-name">Folio</h1>
-//                     <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
-//                 </div>
-//             </div>
-            
-    
-//         </div> -->
