@@ -9,7 +9,7 @@ window.onscroll = ()=> {
     }
 }
 const projects =[{
-  image:'./image/puratap.png',
+  image:'./image/Puratap.png',
   name:"Puratap",
   link: "https://www.puratap.com.au/"
 },{
@@ -57,6 +57,10 @@ image:'./image/Varaluae.png',
   image:'./image/riyadvi.png',
   name:"Riyadvi",
   link: "https://riyadvisoftwaretechnologies.com/"
+},{
+  image:'./image/digi.png',
+  name:"Tourist Place",
+  link: "https://ajuajay11.github.io/Digistart/"
 },{
   image:'./image/sterling.png',
   name:"Sterlingvalves & Controls",
