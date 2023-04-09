@@ -1,3 +1,16 @@
+var hamBurger = document.getElementById('hamburger');
+var show = document.getElementById("ham-nav");
+
+
+hamBurger.addEventListener("click", () =>{
+  if (show.style.display=="none") {
+    show.style.display="block";
+  }
+  else{
+    show.style.display="none"
+  }
+});
+
 
 var bottomTop = document.getElementById('myBtn');
 
@@ -84,17 +97,4 @@ projects.map((e)=>{
   projectName.innerHTML = value;
 });
 
-
-var hamBurger = document.getElementById('hamburger');
-var show = document.getElementById("ham-nav");
-
-
-hamBurger.addEventListener("click", () =>{
-  if (show.style.display=="none") {
-    show.style.display="block";
-  }
-  else{
-    show.style.display="none"
-  }
-});
 

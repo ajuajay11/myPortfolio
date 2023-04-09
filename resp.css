@@ -98,7 +98,7 @@
 
 
   .project-index {
-    grid-template-columns: repeat(1,345px);}
+    grid-template-columns: repeat(1,330px) !important; }
     .projects img{
       height: 177px;
     }
@@ -108,7 +108,7 @@
       flex-direction: column-reverse;
     }
     .conct-col-1{
-      width: 100%;
+      width: 100% !important;
     }
 
 
@@ -116,22 +116,22 @@
       padding:60px 30px;
     }
     .details{
-      margin: 0;
+      margin: 0 !important;
     }
     .details-col{
-      padding: 10px 25px;
+      padding: 10px 25px !important;
     }
     .form-val{
-      margin: 0;
+      margin: 0 !important;
     }
     .form-val input{
-      padding: 14px;
+      padding: 14px !important;
     }
     .form-name :nth-child(2){
-      margin-left: 8px;
+      margin-left: 8px !important;
     }
     .form-name .input{
-      width: 38%;
+      width: 38% !important;
     }
     .form-val .sbt-btn {
       width: 100%;
