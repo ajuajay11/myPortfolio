@@ -21,7 +21,13 @@ window.onscroll = ()=> {
         bottomTop.style.display = "none";
     }
 }
-const projects =[{
+const projects =[
+  {
+    image:'./image/animeflix.png',
+    name:"Animeflix",
+    link: "https://ajflix.web.app/"
+  },
+  {
   image:'./image/Puratap.png',
   name:"Puratap",
   link: "https://www.puratap.com.au/"
