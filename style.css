@@ -337,9 +337,9 @@ height: 700px;
 .projects img{
   width: 100%;
   box-shadow: 3px 3px 4px 2px #0000004f;
-  height: 207px;
+  height: 90%;
   border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
   
 }
 .projects .link{
